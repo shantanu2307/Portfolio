@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
 import Connect from "./Connect";
 import Contact from "./Contact";
+import Skills from "./Skills";
 import "./App.css";
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <AboutMe id="aboutMe">
           <Connect />
         </AboutMe>
+        <Skills />
         <Contact />
       </div>
     );

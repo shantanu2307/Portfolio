@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import "./GPCSS.css";
+import nodemailer from "nodemailer";
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -12,8 +13,7 @@ class Contact extends React.Component {
   }
   formSubmit = async (e) => {
     console.log(this.state);
-    window.location.reload(false);
-    //Set up SMTP
+    //SMTP setup
   };
 
   render() {
