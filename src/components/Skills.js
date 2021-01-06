@@ -11,15 +11,15 @@ class Skills extends React.Component {
           <Card.Header className="heading">Skills</Card.Header>
           <Card.Body>
             <div className="container">
-              <div>C++</div>
-              <div>HTML</div>
-              <div>CSS</div>
-              <div>BootStrap-4</div>
-              <div>JavaScript</div>
-              <div>Python</div>
-              <div>React</div>
-              <div>Node</div>
-              <div>MySQL</div>
+              <div className="item">C++</div>
+              <div className="item">HTML</div>
+              <div className="item">CSS</div>
+              <div className="item">BootStrap-4</div>
+              <div className="item">JavaScript</div>
+              <div className="item">Python</div>
+              <div className="item">React</div>
+              <div className="item">Node</div>
+              <div className="item">MySQL</div>
             </div>
           </Card.Body>
         </Card>
