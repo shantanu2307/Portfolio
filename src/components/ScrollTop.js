@@ -39,6 +39,7 @@ class ScrollTop extends React.Component {
             <img
               src="https://i.postimg.cc/44Ytsk8Z/top-arrow-emoj.png"
               alt="Go to top"
+              className="scroll-img"
             />
           </div>
         )}

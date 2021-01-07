@@ -1,5 +1,9 @@
 .scroll-to-top{
   position: sticky;
   bottom: 0;
-  margin-left: 95%;
+  float: right;
+}
+
+.scroll-img{
+  height: 5vw;
 }
