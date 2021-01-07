@@ -34,7 +34,16 @@ class AboutMe extends React.Component {
               another adventure.
             </div>
             <br />
-            <h1 style={{ fontSize: "4vw", color: "#160457" }}>Timeline</h1>
+            <h1
+              style={{
+                fontSize: "4vw",
+                color: "#160457",
+                textDecoration: "underline",
+              }}
+            >
+              Timeline :
+            </h1>
+            <br />
             <VerticalTimeline>
               <VerticalTimelineElement
                 className="vertical-timeline-element--education"
@@ -42,17 +51,17 @@ class AboutMe extends React.Component {
                 iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
                 icon={<ArrowUp />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h3 className="vertical-timeline-element-title t-heading">
                   Netaji Subhas University of Technology, New Delhi
                 </h3>
-                <h4 className="vertical-timeline-element-subtitle">
+                <h4 className="vertical-timeline-element-subtitle t-subheading">
                   Bachelor of Technology
                 </h4>
-                <p>
+                <p className="t-marks">
                   Computer Science and Engineering with Specialisation in
                   Artificial Intelligence
                 </p>
-                <p>
+                <p className="t-marks">
                   <b>CGPA: 9.0</b>
                 </p>
               </VerticalTimelineElement>
@@ -62,21 +71,21 @@ class AboutMe extends React.Component {
                 iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
                 icon={<ArrowUp />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h3 className="vertical-timeline-element-title t-heading">
                   Alhcon Public School, Mayur Vihar, New Delhi
                 </h3>
-                <h4 className="vertical-timeline-element-subtitle">
+                <h4 className="vertical-timeline-element-subtitle t-subheading">
                   CBSE AISSCE (PCM)
                 </h4>
-                <p>
+                <p className="t-marks">
                   <b>
                     12<sup>th</sup> Boards - 91.8%
                   </b>
                 </p>
-                <p>
+                <p className="t-marks">
                   <b>JEE Advanced: AIR 5304</b>{" "}
                 </p>
-                <p>
+                <p className="t-marks">
                   <b>JEE Mains: AIR 5296</b>{" "}
                 </p>
               </VerticalTimelineElement>
@@ -86,11 +95,13 @@ class AboutMe extends React.Component {
                 iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
                 icon={<ArrowUp />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h3 className="vertical-timeline-element-title t-heading">
                   Amity International School, Noida
                 </h3>
-                <h4 className="vertical-timeline-element-subtitle">Class 10</h4>
-                <p>
+                <h4 className="vertical-timeline-element-subtitle t-subheading">
+                  Class 10
+                </h4>
+                <p className="t-marks">
                   <b>CGPA: 10</b>
                 </p>
               </VerticalTimelineElement>

@@ -19,7 +19,8 @@
 .abt{
   font-size: 3vw;
   color:royalblue;
-  font-family: 'Dancing Script', cursive;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 
 .container{
@@ -32,4 +33,15 @@
 
 .container >div{
   margin-bottom: 10%;
+}
+
+.t-heading{
+  font-size: 3vw;
+}
+
+.t-subheading{
+  font-size:2vw;
+}
+.t-marks{
+  font-size:1vw;
 }
