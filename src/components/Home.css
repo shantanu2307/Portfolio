@@ -1,15 +1,15 @@
 .intro{
 --vh: 7.64px;
 -webkit-font-smoothing: antialiased;
-font-family: poppins,sans-serif;
-font-style: italic;
+font-family: 'Courier New', Courier, monospace;
 text-transform:uppercase;
+justify-content: center;
 text-decoration: wavy;
 box-sizing: border-box;
 padding: 0;
 margin: 0;
-display: block;
-font-weight: 500;
+display: flex;
+flex-direction: column;
 line-height: 1.2;
 font-size:5vw;
 opacity: 1;

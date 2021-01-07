@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import "./GPCSS.css";
-import nodemailer from "nodemailer";
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -22,12 +22,15 @@ class Contact extends React.Component {
         <Card>
           <Card.Header>
             <h1 className="heading">Contact Me!</h1>
-            <blockquote className="heading2">Lets Get in Touch!</blockquote>
+            <blockquote className="heading2">
+              Lets Get in Touch!
+              <br /> Start by saying Hi!
+            </blockquote>
           </Card.Header>
           <Card.Body>
-            <Form>
+            <Form className="resize">
               <Form.Group controlId="formBasicEmail">
-                <Form.Label className="label">Email address</Form.Label>
+                <Form.Label className="label">Email address :</Form.Label>
                 <Form.Control
                   value={this.state.email}
                   type="email"
@@ -40,7 +43,7 @@ class Contact extends React.Component {
                 />
               </Form.Group>
               <Form.Group controlId="formBasicName">
-                <Form.Label className="label">Name</Form.Label>
+                <Form.Label className="label">Name :</Form.Label>
                 <Form.Control
                   value={this.state.name}
                   type="text"
@@ -53,12 +56,11 @@ class Contact extends React.Component {
                 />
               </Form.Group>
               <Form.Group controlId="formBasicText">
-                <Form.Label className="label">Message</Form.Label>
+                <Form.Label className="label">Message :</Form.Label>
                 <Form.Control
                   value={this.state.message}
                   type="text"
                   placeholder="Enter Message"
-                  style={{ height: "12vw" }}
                   onChange={(e) => {
                     this.setState({
                       message: e.target.value,

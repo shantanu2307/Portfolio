@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { ChevronDoubleDown, ArrowUp } from "react-bootstrap-icons";
+import { ChevronDoubleDown, RecordCircleFill } from "react-bootstrap-icons";
 import "./GPCSS.css";
 import "./Home.css";
 import {
@@ -49,7 +49,7 @@ class AboutMe extends React.Component {
                 className="vertical-timeline-element--education"
                 date="August 2019 - Present "
                 iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-                icon={<ArrowUp />}
+                icon={<RecordCircleFill />}
               >
                 <h3 className="vertical-timeline-element-title t-heading">
                   Netaji Subhas University of Technology, New Delhi
@@ -69,7 +69,7 @@ class AboutMe extends React.Component {
                 className="vertical-timeline-element--education"
                 date="2019"
                 iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-                icon={<ArrowUp />}
+                icon={<RecordCircleFill />}
               >
                 <h3 className="vertical-timeline-element-title t-heading">
                   Alhcon Public School, Mayur Vihar, New Delhi
@@ -93,7 +93,7 @@ class AboutMe extends React.Component {
                 className="vertical-timeline-element--education"
                 date="2017"
                 iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-                icon={<ArrowUp />}
+                icon={<RecordCircleFill />}
               >
                 <h3 className="vertical-timeline-element-title t-heading">
                   Amity International School, Noida

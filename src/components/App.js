@@ -4,13 +4,14 @@ import ImageCard from "./Card";
 import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
 import Connect from "./Connect";
+import ScrollTop from "./ScrollTop";
 import Contact from "./Contact";
 import Skills from "./Skills";
 import "./App.css";
 class App extends React.Component {
   render() {
     return (
-      <div className="background">
+      <div className="background" id="home">
         <Navbar />
         <br />
         <br />
@@ -21,6 +22,7 @@ class App extends React.Component {
         </AboutMe>
         <Skills />
         <Contact />
+        <ScrollTop />
       </div>
     );
   }

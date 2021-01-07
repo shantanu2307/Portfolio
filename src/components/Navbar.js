@@ -6,6 +6,7 @@ import {
   CameraFill,
   TelephoneFill,
 } from "react-bootstrap-icons";
+import "./GPCSS.css";
 class Navbars extends React.Component {
   render() {
     return (
@@ -14,6 +15,7 @@ class Navbars extends React.Component {
           backgroundColor: "black",
         }}
         expand="lg"
+        sticky="top"
       >
         <Navbar.Brand
           href="#home"
@@ -40,7 +42,7 @@ class Navbars extends React.Component {
               }}
             >
               <PersonFill />
-              <span> About Me</span>
+              <span className="ho"> About Me</span>
             </Nav.Link>
             <Nav.Link
               href="#skills"
@@ -49,7 +51,7 @@ class Navbars extends React.Component {
               }}
             >
               <BookFill />
-              <span> Skills</span>
+              <span className="ho"> Skills</span>
             </Nav.Link>
             <Nav.Link
               href="#projects"
@@ -58,7 +60,7 @@ class Navbars extends React.Component {
               }}
             >
               <CameraFill />
-              <span> Projects</span>
+              <span className="ho"> Projects</span>
             </Nav.Link>
             <Nav.Link
               href="#contactMe"
@@ -67,7 +69,7 @@ class Navbars extends React.Component {
               }}
             >
               <TelephoneFill />
-              <span> Contact Me</span>
+              <span className="ho"> Contact Me</span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
