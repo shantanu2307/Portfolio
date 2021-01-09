@@ -43,14 +43,7 @@ class Home extends React.Component {
               I build Amazing UI/UX Experiences
             </span>
           </div>
-          <div
-            style={{
-              marginTop: "10%",
-              marginLeft: "47%",
-            }}
-          >
-            <ChevronDoubleDown className="downIcon" />
-          </div>
+          <br />
         </div>
       </div>
     );

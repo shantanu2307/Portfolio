@@ -8,11 +8,32 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { TimelineMax, Power2 } from "gsap";
+
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);
     this.headRef = React.createRef();
+    this.tl = new TimelineMax();
   }
+
+  componentDidMount() {
+    this.tl
+      .from(
+        this.headRef,
+        1,
+        {
+          opacity: 0,
+          animation: Power2.easeIn,
+        },
+        "+=1"
+      )
+      .from(".abt", 2, {
+        color: "green",
+        animation: Power2.easeOut,
+      });
+  }
+
   render() {
     return (
       <div id="aboutMe">
@@ -116,7 +137,15 @@ class AboutMe extends React.Component {
             </VerticalTimeline>
           </Card.Body>
           <Card.Footer>
-            <div className="abt">Connect with Me!</div>
+            <h1
+              style={{
+                fontSize: "4vw",
+                color: "#160457",
+                textDecoration: "underline",
+              }}
+            >
+              Connect With Me
+            </h1>
             {this.props.children}
           </Card.Footer>
         </Card>
@@ -125,9 +154,7 @@ class AboutMe extends React.Component {
             marginTop: "10%",
             marginLeft: "47%",
           }}
-        >
-          <ChevronDoubleDown className="iconDown" />
-        </div>
+        ></div>
       </div>
     );
   }
