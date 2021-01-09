@@ -138,90 +138,92 @@ class ContactForm extends Component {
     const { formErrors } = this.state;
 
     return (
-      <Card>
-        <Card.Header className="heading">Contact Me!</Card.Header>
-        <Card.Body>
-          <div className="ContactForm" style={{ display: "block" }}>
-            <form id="contact-form" onSubmit={this.handleSubmit} noValidate>
-              <div>
+      <div id="contactMe">
+        <Card>
+          <Card.Header className="heading">Contact Me!</Card.Header>
+          <Card.Body>
+            <div className="ContactForm" style={{ display: "block" }}>
+              <form id="contact-form" onSubmit={this.handleSubmit} noValidate>
                 <div>
-                  <input
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    className={`form-control formInput ${
-                      formErrors.name.length > 0 ? "error" : null
-                    }`}
-                    onChange={this.handleChange}
-                    placeholder="Name"
-                    noValidate
-                  ></input>
-                  {formErrors.name.length > 0 && (
-                    <span className="errorMessage">{formErrors.name}</span>
-                  )}
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      value={this.state.name}
+                      className={`form-control formInput ${
+                        formErrors.name.length > 0 ? "error" : null
+                      }`}
+                      onChange={this.handleChange}
+                      placeholder="Name"
+                      noValidate
+                    ></input>
+                    {formErrors.name.length > 0 && (
+                      <span className="errorMessage">{formErrors.name}</span>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      value={this.state.email}
+                      className={`form-control formInput ${
+                        formErrors.email.length > 0 ? "error" : null
+                      }`}
+                      onChange={this.handleChange}
+                      placeholder="Email"
+                      noValidate
+                    ></input>
+                    {formErrors.email.length > 0 && (
+                      <span className="errorMessage">{formErrors.email}</span>
+                    )}
+                  </div>
                 </div>
 
                 <div>
-                  <input
-                    type="email"
-                    name="email"
-                    value={this.state.email}
-                    className={`form-control formInput ${
-                      formErrors.email.length > 0 ? "error" : null
-                    }`}
-                    onChange={this.handleChange}
-                    placeholder="Email"
-                    noValidate
-                  ></input>
-                  {formErrors.email.length > 0 && (
-                    <span className="errorMessage">{formErrors.email}</span>
-                  )}
-                </div>
-              </div>
+                  <div>
+                    <input
+                      type="subject"
+                      name="subject"
+                      value={this.state.subject}
+                      className={`form-control formInput ${
+                        formErrors.subject.length > 0 ? "error" : null
+                      }`}
+                      onChange={this.handleChange}
+                      placeholder="Subject"
+                      noValidate
+                    ></input>
+                    {formErrors.subject.length > 0 && (
+                      <span className="errorMessage">{formErrors.subject}</span>
+                    )}
+                  </div>
 
-              <div>
-                <div>
-                  <input
-                    type="subject"
-                    name="subject"
-                    value={this.state.subject}
-                    className={`form-control formInput ${
-                      formErrors.subject.length > 0 ? "error" : null
-                    }`}
-                    onChange={this.handleChange}
-                    placeholder="Subject"
-                    noValidate
-                  ></input>
-                  {formErrors.subject.length > 0 && (
-                    <span className="errorMessage">{formErrors.subject}</span>
-                  )}
+                  <div>
+                    <textarea
+                      rows="5"
+                      name="message"
+                      value={this.state.message}
+                      className={`form-control formInput ${
+                        formErrors.message.length > 0 ? "error" : null
+                      }`}
+                      onChange={this.handleChange}
+                      placeholder="Message"
+                      noValidate
+                    ></textarea>
+                    {formErrors.message.length > 0 && (
+                      <span className="errorMessage">{formErrors.message}</span>
+                    )}
+                  </div>
                 </div>
-
                 <div>
-                  <textarea
-                    rows="5"
-                    name="message"
-                    value={this.state.message}
-                    className={`form-control formInput ${
-                      formErrors.message.length > 0 ? "error" : null
-                    }`}
-                    onChange={this.handleChange}
-                    placeholder="Message"
-                    noValidate
-                  ></textarea>
-                  {formErrors.message.length > 0 && (
-                    <span className="errorMessage">{formErrors.message}</span>
-                  )}
+                  <Button type="submit">Submit</Button>
                 </div>
-              </div>
-              <div>
-                <Button type="submit">Submit</Button>
-              </div>
-            </form>
-            <ToastContainer />
-          </div>
-        </Card.Body>
-      </Card>
+              </form>
+              <ToastContainer />
+            </div>
+          </Card.Body>
+        </Card>
+      </div>
     );
   }
 }

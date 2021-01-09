@@ -28,15 +28,27 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  gap:10%
+  gap:20%;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2vw;
+}
+
+.item >div{
+  margin-left: 10px;
+}
+
+.full{
+  font-size: 5vw;
+  color: currentColor;
 }
 
 .resize{
   width: 100%;
-}
-
-.container >div{
-  margin-bottom: 10%;
 }
 
 .t-heading{

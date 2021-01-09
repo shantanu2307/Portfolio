@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { ChevronDoubleDown } from "react-bootstrap-icons";
+import ProgrssBar from "./ProgressBar";
 import "./GPCSS.css";
 class Skills extends React.Component {
   render() {
@@ -10,235 +10,41 @@ class Skills extends React.Component {
           <Card.Header className="heading">Skills</Card.Header>
           <Card.Body>
             <div className="container">
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "95%",
-                    backgroundColor: "#f5c4f0",
-                    color: "black",
-                  }}
-                >
-                  <b>CSS</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-html5 full"></i>
+                <ProgrssBar title={"HTML"} progress={82} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "90%",
-                    backgroundColor: "#d0f582",
-                    color: "black",
-                  }}
-                >
-                  <b>HTML</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-css3-alt full"></i>
+                <ProgrssBar title={"CSS"} progress={87} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "70%",
-                    backgroundColor: "#d0f582",
-                    color: "black",
-                  }}
-                >
-                  <b>BootStrap</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-bootstrap full"></i>
+                <ProgrssBar title={"Bootstrap"} progress={85} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "95%",
-                    backgroundColor: "#f5c4f0",
-                    color: "black",
-                  }}
-                >
-                  <b>javaScript</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-sass full"></i>
+                <ProgrssBar title={"SASS"} progress={70} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "95%",
-                    backgroundColor: "#f5c4f0",
-                    color: "black",
-                  }}
-                >
-                  <b>ReactJS</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-js full"></i>
+                <ProgrssBar title={"javaScript"} progress={90} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "90%",
-                    backgroundColor: "#d0f582",
-                    color: "black",
-                  }}
-                >
-                  <b>NodeJS</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-python full"></i>
+                <ProgrssBar title={"Python"} progress={60} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "85%",
-                    backgroundColor: "#d0f582",
-                    color: "black",
-                  }}
-                >
-                  <b>MongoDB</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-react full"></i>
+                <ProgrssBar title={"React"} progress={85} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "60%",
-                    backgroundColor: "#f5c4f0",
-                    color: "black",
-                  }}
-                >
-                  <b>Python</b>
-                </div>
+              <div className="item">
+                <i class="fab fa-node-js full"></i>
+                <ProgrssBar title={"Node"} progress={85} />
               </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "90%",
-                    backgroundColor: "#f5c4f0",
-                    color: "black",
-                  }}
-                >
-                  <b>C/C++</b>
-                </div>
-              </div>
-              <div
-                className="progress"
-                style={{
-                  border: "1px solid black",
-                  width: "40%",
-                  height: "40%",
-                }}
-              >
-                <div
-                  className="progress-bar progress-bar-striped progress-bar-animated"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{
-                    width: "75%",
-                    backgroundColor: "#d0f582",
-                    color: "black",
-                  }}
-                >
-                  <b>MySQL</b>
-                </div>
+              <div className="item">
+                <i class="fas fa-database full"></i>
+                <ProgrssBar title={"MongoDB"} progress={70} />
               </div>
             </div>
           </Card.Body>
