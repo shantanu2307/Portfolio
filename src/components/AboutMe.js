@@ -11,13 +11,21 @@ import "react-vertical-timeline-component/style.min.css";
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);
+    this.headRef = React.createRef();
   }
   render() {
     return (
       <div id="aboutMe">
         <Card>
           <Card.Header>
-            <h1 className="heading">About Me!</h1>
+            <h1
+              className="heading"
+              ref={(e) => {
+                this.headRef = e;
+              }}
+            >
+              About Me!
+            </h1>
           </Card.Header>
           <Card.Body className="content-card">
             <div className="abt">

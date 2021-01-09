@@ -29,8 +29,6 @@ class Navbars extends React.Component {
           aria-controls="basic-navbar-nav"
           style={{
             backgroundColor: "white",
-            borderRadius: "100%",
-            height: "60px",
           }}
         />
         <Navbar.Collapse id="basic-navbar-nav">
