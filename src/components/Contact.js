@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
@@ -215,9 +215,7 @@ class ContactForm extends Component {
                 </div>
               </div>
               <div>
-                <button className="button button-big submit-btn" type="submit">
-                  Submit
-                </button>
+                <Button type="submit">Submit</Button>
               </div>
             </form>
             <ToastContainer />
