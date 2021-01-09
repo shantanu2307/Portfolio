@@ -248,9 +248,7 @@ class Skills extends React.Component {
             marginTop: "10%",
             marginLeft: "47%",
           }}
-        >
-          <ChevronDoubleDown className="iconDown" />
-        </div>
+        ></div>
       </div>
     );
   }
