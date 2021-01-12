@@ -45,23 +45,26 @@ class AboutMe extends React.Component {
                 this.headRef = e;
               }}
             >
-              About Me!
+              <b>About Me!</b>
             </h1>
           </Card.Header>
           <Card.Body className="content-card">
-            <div className="abt">
-              I'm a MERN Stack Web Developer and UI/UX Designer based in
-              Delhi/NCR.
+            <div className="container-fluid">
+              <div className="abt">
+                I'm a MERN Stack Web Developer and UI/UX Designer based in
+                Delhi/NCR.
+              </div>
+              <div className="abt">
+                I'm passionate about web development and love to code beautiful
+                and attractive things.
+              </div>
+              <div className="abt">
+                I'm always ready to challenge myself and explore new areas of
+                work. I never stop learning and for me, each new project is
+                another adventure.
+              </div>
             </div>
-            <div className="abt">
-              I'm passionate about web development and love to code beautiful
-              and attractive things.
-            </div>
-            <div className="abt">
-              I'm always ready to challenge myself and explore new areas of
-              work. I never stop learning and for me, each new project is
-              another adventure.
-            </div>
+
             <br />
             <h1
               style={{
@@ -144,7 +147,7 @@ class AboutMe extends React.Component {
                 textDecoration: "underline",
               }}
             >
-              Connect With Me
+              Connect With Me :
             </h1>
             {this.props.children}
           </Card.Footer>

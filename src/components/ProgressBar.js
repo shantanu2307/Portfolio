@@ -20,7 +20,9 @@ class ProgressBar extends React.Component {
           >
             <div className="progressbar-liquid"></div>
           </div>
-          <span className="progress">{progress}%</span>
+          <b className="progress" style={{ fontSize: "70%" }}>
+            {progress}%
+          </b>
         </div>
       </div>
     );

@@ -6,6 +6,7 @@ import AboutMe from "./AboutMe";
 import Connect from "./Connect";
 import ScrollTop from "./ScrollTop";
 import Contact from "./Contact";
+import Project from "./Projects";
 import Skills from "./Skills";
 import "./App.css";
 import { TweenLite } from "gsap";
@@ -35,6 +36,7 @@ class App extends React.Component {
           <Connect />
         </AboutMe>
         <Skills />
+        <Project />
         <Contact />
         <ScrollTop />
       </div>

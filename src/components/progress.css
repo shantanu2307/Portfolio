@@ -8,7 +8,7 @@
 .progressbar-container {
   position: relative;
   width: 100%;
-  height: 2vw;
+  height: 3vw;
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
@@ -21,7 +21,7 @@
   position: absolute;
   left: 0;
   top: 0px;
-  height: 2vw;
+  height: 3vw;
   background-color: #5225bd;
   border-radius: 10px;
   animation: g 2500ms infinite ease-in-out;
@@ -40,7 +40,7 @@
   border-radius: 40%;
 }
 .progress {
-  z-index: 2;
+  z-index: 100;
 }
 @keyframes g {
   0% {

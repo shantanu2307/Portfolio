@@ -140,7 +140,9 @@ class ContactForm extends Component {
     return (
       <div id="contactMe">
         <Card>
-          <Card.Header className="heading">Contact Me!</Card.Header>
+          <Card.Header className="heading">
+            <b>Contact Me!</b>
+          </Card.Header>
           <Card.Body>
             <div className="ContactForm" style={{ display: "block" }}>
               <form id="contact-form" onSubmit={this.handleSubmit} noValidate>
